@@ -13,7 +13,9 @@ export class App extends Server {
 
     this.app.use(
       cors({
-        origin: ["http://localhost:3000"].filter(Boolean) as string[],
+        origin: [
+          process.env.APP_URI.includes("localhost") && "http://localhost:3000",
+        ].filter(Boolean) as string[],
         optionsSuccessStatus: 200,
         credentials: true,
       })
