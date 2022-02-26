@@ -21,11 +21,16 @@
   },
   "homepage": "https://github.com/boon-cpu/builderhacks-season-one#readme",
   "devDependencies": {
+    "@types/express": "^4.17.13",
+    "@types/signale": "^1.4.4",
     "ts-node-dev": "^1.1.8"
   },
   "dependencies": {
+    "@overnightjs/core": "^1.7.6",
     "@types/mongoose": "^5.11.97",
+    "cors": "^2.8.5",
     "dotenv": "^16.0.0",
+    "express": "^4.17.3",
     "mongoose": "^6.2.3",
     "signale": "^1.4.0"
   }
