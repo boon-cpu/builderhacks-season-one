@@ -3,7 +3,7 @@ import e from "express";
 
 type SuccessfulAPIResponse<Body> = {
   success: true;
-  data: Body;
+  data?: Body;
 };
 
 type FailedAPIResponse = {

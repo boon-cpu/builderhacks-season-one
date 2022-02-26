@@ -21,6 +21,7 @@ const schema = new Schema<IUser>({
   registered: {
     type: Date,
     required: true,
+    default: new Date(),
   },
 });
 
