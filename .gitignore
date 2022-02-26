@@ -1,0 +1,7 @@
+node_modules/
+dist/
+src/uploads
+.idea
+.env
+.vscode
+.DS_Store
