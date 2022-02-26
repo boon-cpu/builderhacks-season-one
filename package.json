@@ -29,6 +29,7 @@
     "@overnightjs/core": "^1.7.6",
     "@types/mongoose": "^5.11.97",
     "bcrypt": "^5.0.1",
+    "cookie-parser": "^1.4.6",
     "cors": "^2.8.5",
     "dotenv": "^16.0.0",
     "express": "^4.17.3",

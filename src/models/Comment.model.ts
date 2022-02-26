@@ -4,7 +4,6 @@ export interface IComment {
   userId: string;
   postId: string;
   content: string;
-  imageUrl: string;
   date: Date;
 }
 
@@ -23,13 +22,11 @@ const schema = new Schema<IComment>({
     type: String,
     required: true,
   },
-  imageUrl: {
-    type: String,
-    required: false,
-  },
   date: {
     type: Date,
     required: true,
     default: new Date(),
   },
 });
+
+export const CommentModel = model<ICommentDocument>("Comment", schema);

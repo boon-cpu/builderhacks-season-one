@@ -3,7 +3,6 @@ import { model, Document, Schema } from "mongoose";
 export interface IPost {
   userId: string;
   content: string;
-  imageUrl: string;
   date: Date;
 }
 
@@ -17,10 +16,6 @@ const schema = new Schema<IPost>({
   content: {
     type: String,
     required: true,
-  },
-  imageUrl: {
-    type: String,
-    required: false,
   },
   date: {
     type: Date,

@@ -35,7 +35,7 @@ export function toToken(user: IUserDocument) {
 }
 
 export function fromReq(request: Request): null | ReturnType<typeof toUser> {
-  const token = request.cookies.creator_connect_auth as string | undefined;
+  const token = request.cookies[COOKIE_NAME] as string | undefined;
 
   if (!token) {
     return null;

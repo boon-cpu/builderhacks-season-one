@@ -3,6 +3,7 @@ import signale from "signale";
 import cors from "cors";
 import express, { Handler } from "express";
 import { errorHandler } from "./utils/errorHandler";
+import cookieParser from "cookie-parser";
 import { BigController } from "./api";
 
 export class App extends Server {
@@ -18,6 +19,7 @@ export class App extends Server {
       })
     );
     this.app.use(express.json());
+    this.app.use(cookieParser());
 
     this.app.get("/", (req, res) => {
       return res.status(200).json({
